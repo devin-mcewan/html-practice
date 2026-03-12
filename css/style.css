@@ -1,0 +1,57 @@
+nav {
+    background-color: #7A7D7D;
+    padding: 10px;
+    text-align: center;
+    color:#FFFFFF;
+}
+nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+body { 
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FFFBFE;
+    color: #333;
+    margin: 0;
+    padding: 20px, 0, 20px, 0;
+}
+
+h2 {
+    color: #565254;
+    text-align: center;
+}
+
+section p{
+    margin: 20px;
+}
+
+#goals {
+    background-color: #D0CFCF;
+    padding: 15px;
+}
+#goals h2 {
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#projects {
+    background-color: #565254;
+    padding: 15px;
+    color: #FFFFFF;
+}
+#projects h2{
+    color: #FFFFFF;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #565254;
+}
