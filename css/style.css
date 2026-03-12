@@ -7,9 +7,18 @@ nav {
 nav a{
     color: #FFFFFF;
     text-decoration: none;
+    padding: 20px;
     margin: 0 15px;
 }
+nav a:hover {
+    background-color: #D0CFCF;
+    text-decoration: underline;
+}
 nav ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
     list-style-type: none;
     padding: 0;
 }
@@ -54,4 +63,13 @@ footer {
     text-align: center;
     margin-top: 20px;
     color: #565254;
+}
+.gold-text {
+    color:#c3a343;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+    url(http://www.theblogmarket.co/wp-content/uploads/2015/11/GOLD-11.jpg) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    text-decoration: none;
 }
