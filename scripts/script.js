@@ -31,3 +31,11 @@ function phaseClick(id) {
     document.getElementById("phase4").textContent = "Phase 4";
   }
 }
+
+function login(id) {
+  let username = document.getElementById("name").value;
+  document.getElementById(id).textContent = `Welcome, ${username}!`;
+  document.getElementById("name").value = "";
+  document.getElementById("login-button").disabled = true;
+  document.getElementById("name").style.visibility = "hidden";
+}

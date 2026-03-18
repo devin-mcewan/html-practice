@@ -23,6 +23,18 @@ nav ul {
   padding: 0;
 }
 
+#login {
+  background-color: #333;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 body {
   font-family: "Courier New", Courier, monospace;
   margin: 0;
@@ -34,6 +46,10 @@ section p {
 }
 
 .primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fffbfe;
   color: #333;
   padding: 15px;
@@ -43,6 +59,10 @@ section p {
   text-align: center;
 }
 .secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #d0cfcf;
   padding: 15px;
 }
@@ -94,4 +114,16 @@ footer {
 #phases button:hover {
   background-color: #333;
   color: #d0cfcf;
+}
+
+#login-section button {
+  background-color: #7a7d7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 15px;
+  cursor: pointer;
 }
