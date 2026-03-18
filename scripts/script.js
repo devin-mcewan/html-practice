@@ -13,3 +13,21 @@ function introduceWithHobby(hobby) {
 }
 
 introduceWithHobby("racing cars");
+
+function phaseClick(id) {
+  let button = document.getElementById(id);
+  if (id === "phase1") {
+    button.textContent = "Learn HTML and CSS";
+  } else if (id === "phase2") {
+    button.textContent = "Learn JavaScript";
+  } else if (id === "phase3") {
+    button.textContent = "Build Projects in React";
+  } else if (id === "phase4") {
+    button.textContent = "Build Full Stack portfolio projects";
+  } else if (id === "reset") {
+    document.getElementById("phase1").textContent = "Phase 1";
+    document.getElementById("phase2").textContent = "Phase 2";
+    document.getElementById("phase3").textContent = "Phase 3";
+    document.getElementById("phase4").textContent = "Phase 4";
+  }
+}
