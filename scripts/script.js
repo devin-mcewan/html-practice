@@ -33,8 +33,20 @@ function phaseClick(id) {
 }
 
 function login(id) {
-  let username = document.getElementById("name").value;
-  document.getElementById(id).textContent = `Welcome, ${username}!`;
+  let loggedIn = false;
+  if (loggedIn === false) {
+    if (document.getElementById("name").value === "") {
+      alert("Please enter your name to log in.");
+      loggedIn = false;
+      return;
+    } else {
+      let username = document.getElementById("name").value;
+      document.getElementById(id).textContent = `Welcome, ${username}!`;
+      loggedIn = true;
+    }
+  }
+  if (loggedIn === true) {
+  }
   document.getElementById("name").value = "";
   document.getElementById("login-button").disabled = true;
   document.getElementById("name").style.visibility = "hidden";
