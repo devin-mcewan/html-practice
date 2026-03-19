@@ -51,10 +51,11 @@ function login(id) {
     }
   }
   if (loggedIn === true) {
+    document.getElementById("name").value = "";
+    document.getElementById("login-button").disabled = true;
+    document.getElementById("name").style.visibility = "hidden";
+    document.getElementById("login").style.visibility = "hidden";
   }
-  document.getElementById("name").value = "";
-  document.getElementById("login-button").disabled = true;
-  document.getElementById("name").style.visibility = "hidden";
 }
 
 function handleGarageClick() {
