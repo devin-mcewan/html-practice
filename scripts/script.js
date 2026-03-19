@@ -1,5 +1,10 @@
 let name = "Devin";
 let goal = "become a software engineer";
+let cars = [
+  "2016 Subaru Impreza Base",
+  "2015 Scion FRS Base",
+  "1993 Mazda Miata LE",
+];
 
 function introduce() {
   console.log(`Hello, my name is ${name} and my goal is to ${goal}.`);
@@ -50,4 +55,23 @@ function login(id) {
   document.getElementById("name").value = "";
   document.getElementById("login-button").disabled = true;
   document.getElementById("name").style.visibility = "hidden";
+}
+
+function handleGarageClick() {
+  let garage = document.getElementById("garage");
+  if (garage.textContent === "Open The Garage") {
+    garage.textContent = "Close The Garage";
+    for (let i = 0; i < cars.length; i++) {
+      let container = document.getElementById("car-list");
+      let item = document.createElement("li");
+      item.textContent = cars[i];
+      container.appendChild(item);
+    }
+  } else if (garage.textContent === "Close The Garage") {
+    garage.textContent = "Open The Garage";
+    let container = document.getElementById("car-list");
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+  }
 }
